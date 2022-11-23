@@ -1,8 +1,8 @@
-import PostModul from "@/resources/post/post.modul";
+import PostModel from "@/resources/post/post.model";
 import Post from '@/resources/post/post.interface';
 
 class PostService {
-    private post = PostModul;
+    private post = PostModel;
 
     /**
      * Create a new post
