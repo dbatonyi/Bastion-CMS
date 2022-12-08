@@ -24,8 +24,8 @@ module.exports = (sequelize: any, DataTypes: any) => {
     password!: string;
     static associate(models: any) {
       // define association here
-      User.belongsToMany(models.Project, {
-        through: 'ProjectAssignments',
+      User.belongsToMany(models.Entity, {
+        through: 'EntityAssignments',
       });
     }
   }
